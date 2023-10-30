@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin:7% auto; /* T/B-top bottem first value ;L/R- left right*/
+            animation-name: abc1;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+
+        }
+        @keyframes abc1{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+        .abc2{
+            width: 200px;
+            height: 200px;
+            background: green   ;
+            margin:10% auto; /* T/B-top bottem first value ;L/R- left right*/
+            animation-name: abc2;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+
+        }
+        @keyframes abc2{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            50%{
+               background: violet; 
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+    
+        .abc3{
+            width: 200px;
+            height: 200px;
+            background: yellowgreen   ;
+            animation-name: abc3;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        @keyframes abc3{
+            0%{
+                transform:translateX(0px);
+            }
+            25%{
+                background: orange;
+            }
+            50%{
+                background: blue;  
+            }
+            50%{
+                background: brown;
+            }
+            100%{
+                transform: translateX(1600px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="abc"></div>
+    <div class="abc2"></div>
+    <div class="abc3"></div>
+    
+</body>
+</html>
